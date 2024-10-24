@@ -8,8 +8,11 @@ Some of the desired features:
 - Images of each cookie
 - Create a section with just reviews (most likely another page)
 
+
 Will use the Flask Framework for Python for backend, and will use JS, HTML, and CSS for front end.
 
 Eventually, will keep track of inventory using a RDBMS. MYSQL.
 
 
+"Special" features (not necessary at first):
+- when hovering over a cookie, a review will show up about the cookie, making the experience unique.
