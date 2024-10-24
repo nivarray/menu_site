@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewports" content="width=device-width, initial-scale=1.0">
+        <title>Mia'sSweetTooth</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="my-4">Mia's Cookies: Mias's Sweet Tooth Shop</h1>
+            <h2>Cookie Menu: </h2>
+            <div class="row">
+                {% for item in menu_items %}
+                    <div class="col-md-4 mb-4">
+                        <!-- <img src="{{ item.image_url }}" class="card-img-top" alt="{{ item.name }}"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.name }}</h5>
+                            <p class="card-text">{{ item.description }}</p>
+                            <p class="card-text"><strong>{{item.price }}</strong></p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

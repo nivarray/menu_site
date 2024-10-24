@@ -6,7 +6,7 @@ Some of the desired features:
 - Display all types of cookies
 - Prices
 - Images of each cookie
-- 
+- Create a section with just reviews (most likely another page)
 
 Will use the Flask Framework for Python for backend, and will use JS, HTML, and CSS for front end.
 
