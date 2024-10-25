@@ -1,0 +1,18 @@
+/* External CSS for Mia's Sweet Tooth Shop */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: pink; /*play around with the color*/
+}
+
+/*Center text in all h1 and h2 elements */
+h1, h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.menu-list {
+    border: 2px solid #333; /* Change #333 to any color you prefer */
+    padding: 20px; /* Adds some space between the border and the content */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    margin-top: 20px; /* Optional: adds space above the border */    
+}

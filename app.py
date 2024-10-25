@@ -17,6 +17,12 @@ menu_items = [
         'description': 'Hearty oatmeal cookie with plump raisins.',
         'price': '$2.00',
         #'image_url': 'static/images/oatmeal_raisin_cookie.jpg'
+    },
+    {
+        'name': 'Butter Pecan Cookie',
+        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+        'price': '$2.00',
+        #'image_url': 'static/images/oatmeal_raisin_cookie.jpg'
     }]
 
 # main page is menu page
