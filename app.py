@@ -10,19 +10,19 @@ menu_items = [
         'name': 'Chocolate Chip Cookie',
         'description': 'Classic chocolate chip cookie with gooey chocolate chips.',
         'price': '$2.50',
-        #'image_url': 'static/images/chocolate_chip_cookie.jpg' 
+        'image_url': 'static/images/kitten.png' 
     },
     {
         'name': 'Oatmeal Raisin Cookie',
         'description': 'Hearty oatmeal cookie with plump raisins.',
         'price': '$2.00',
-        #'image_url': 'static/images/oatmeal_raisin_cookie.jpg'
+        'image_url': 'static/images/capy.jpg'
     },
     {
         'name': 'Butter Pecan Cookie',
         'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
         'price': '$2.00',
-        #'image_url': 'static/images/oatmeal_raisin_cookie.jpg'
+        'image_url': 'static/images/angry_gunter.png'
     }]
 
 # main page is menu page

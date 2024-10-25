@@ -16,3 +16,9 @@ h1, h2 {
     border-radius: 5px; /* Optional: adds rounded corners */
     margin-top: 20px; /* Optional: adds space above the border */    
 }
+
+.menu-list img {
+    width: 100%; /* Ensures images fill the width of the parent container */
+    height: 300px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
