@@ -1,24 +1,47 @@
 /* External CSS for Mia's Sweet Tooth Shop */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: pink; /*play around with the color*/
+    color: rgb(100, 50, 0); /*play around with the color*/
+    background-color: rgb(217, 210, 233);
 }
 
-/*Center text in all h1 and h2 elements */
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Use Playfair Display for the menu title */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem; /* Larger size for the title */
+    font-weight: 700; /* Bold title */
+    text-align: center; /* Center the title */
+    color: rgb(100, 50, 0); /* Dark color for the title */
+    letter-spacing: 1px; /* Slight letter spacing for style */
+}
+
+/* Center text in all h1 and h2 elements
 h1, h2 {
     text-align: center;
     margin-top: 2rem;
-}
+} */
 
 .menu-list {
-    border: 2px solid #333; /* Change #333 to any color you prefer */
+    border: none; /* Change #333 to any color you prefer */
     padding: 20px; /* Adds some space between the border and the content */
     border-radius: 5px; /* Optional: adds rounded corners */
-    margin-top: 20px; /* Optional: adds space above the border */    
+    margin-top: 20px; /* Optional: adds space above the border */   
 }
 
 .menu-list img {
     width: 100%; /* Ensures images fill the width of the parent container */
     height: 300px; /* Fixed height for all images */
     object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 30px; /* Rounds the corners of the image */
+    
+}
+
+.menu-list .card {
+    background-color: transparent; /* Makes the container background transparent */
+    border: none; /* Optional: remove any borders around the card */
+    box-shadow: none;
 }
