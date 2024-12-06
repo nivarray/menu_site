@@ -30,6 +30,7 @@ h1, h2 {
     padding: 20px; /* Adds some space between the border and the content */
     border-radius: 5px; /* Optional: adds rounded corners */
     margin-top: 20px; /* Optional: adds space above the border */   
+    background-color: transparent;
 }
 
 .menu-list img {
@@ -37,11 +38,27 @@ h1, h2 {
     height: 300px; /* Fixed height for all images */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 30px; /* Rounds the corners of the image */
-    
+    transition: transform 0.3s ease; /* Adds a smooth zoom-in effect */
+}
+
+.menu-list img:hover {
+    transform: scale(1.1); /* Scales the image by 10% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-list .card {
-    background-color: transparent; /* Makes the container background transparent */
+    overflow: hidden;
+    background-color: rgb(217, 210, 233); /* Makes the container background transparent */
     border: none; /* Optional: remove any borders around the card */
     box-shadow: none;
+    border-radius: 30px;
 }
+
+.menu-list .card-body {
+    padding: 15px;
+    background-color: rgb(217, 210, 233);
+    border-radius: 0 0 30px 30px; /* Bottom corners rounded only */
+}
+
+
