@@ -14,7 +14,7 @@ menu_items = [
         'Availability':'In Stock!'
     },
     {
-        'name': 'M&M’s Cookie',
+        'name': 'Biscoff Cookie',
         'description': 'Hearty oatmeal cookie with plump raisins.',
         'price': '$2.00',
         'image_url': 'static/images/Biscoff_Butter.PNG', 
