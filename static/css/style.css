@@ -31,6 +31,7 @@ h1, h2 {
     border-radius: 5px; /* Optional: adds rounded corners */
     margin-top: 20px; /* Optional: adds space above the border */   
     background-color: transparent;
+
 }
 
 .menu-list img {
@@ -53,12 +54,33 @@ h1, h2 {
     border: none; /* Optional: remove any borders around the card */
     box-shadow: none;
     border-radius: 30px;
+    padding: 10px;
 }
 
 .menu-list .card-body {
+    /* padding: 15px;
+    background-color: rgb(217, 210, 233);
+    border-radius: 0 0 30px 30px; Bottom corners rounded only */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between elements */
+    height: 275px; /* Set a fixed height for uniformity */
     padding: 15px;
     background-color: rgb(217, 210, 233);
     border-radius: 0 0 30px 30px; /* Bottom corners rounded only */
 }
 
+.card-text {
+    max-height: 120px; /* Limits the description height*/
+    overflow: hidden; /* Hides excess text */
+    text-overflow: ellipsis; /* Adds an ellipsis (...) for overflow */
+    white-space: normal; /* Allows wrapping of text */
+    line-height: 1.5; /* Adjust line spacing */
+    
+}
 
+.card-text.d-flex {
+    justify-content: space-between;
+    margin-top: auto; /* Pushes the price and availability to the bottom */
+}

@@ -8,21 +8,21 @@ app = Flask(__name__)
 menu_items = [
     {
         'name': 'Chocolate Chip Cookie',
-        'description': 'Classic chocolate chip cookie with gooey chocolate chips.',
+        'description': 'Big, soft brown sugar cookie made with semisweet chocolate chips and mini chocolate chips sprinkled with coarse sea salt.',
         'price': '$2.50',
         'image_url': 'static/images/Chocolate_Chip.png', 
         'Availability':'In Stock!'
     },
     {
         'name': 'Biscoff Cookie',
-        'description': 'Hearty oatmeal cookie with plump raisins.',
+        'description': 'Brown sugar cookie made with crushed Biscoff biscuits stuffed with Biscoff cookie butter.',
         'price': '$2.00',
         'image_url': 'static/images/Biscoff_Butter.PNG', 
         'Availability':'In Stock!'
     },
     {
         'name': 'S’mores Cookie',
-        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+        'description': 'Chocolate chip cookie stuffed with a graham cracker, Hershey’s chocolate, and a jumbo marshmallow. Topped with mini marshmallows, chopped milk chocolate bar pieces, and graham cracker crumbs.',
         'price': '$2.00',
         'image_url': 'static/images/Smores.png', 
         'Availability':'In Stock!'
@@ -36,32 +36,53 @@ menu_items = [
     },
     {
         'name': 'Cranberry Oatmeal Cookie',
-        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+        'description': 'Moist oatmeal spice cookie mixed with dried cranberries and white chocolate chips. Optional macadamia nuts.',
         'price': '$2.00',
         'image_url': 'static/images/Oatmeal_Cranberry.png', 
         'Availability':'In Stock!'
     },
     {
         'name': 'White Chocolate Macadamia Cookie',
-        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+        'description': 'Brown sugar cookie made with freshly chopped buttery rich macadamia nuts and white chocolate chips.',
         'price': '$2.00',
         'image_url': 'static/images/White_Chocolate_Macadamia.png', 
         'Availability':'In Stock!'
     },
     {
+        'name': 'Red Velvet Cookie',
+        'description': 'Luscious moist red velvet cake cookie mixed with white chocolate chips.',
+        'price': '$2.00',
+        'image_url': 'static/images/Red_Velvet.PNG', 
+        'Availability':'In Stock!'
+    },
+    {
         'name': 'Pumpkin Snickerdoodle Cookie',
-        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+        'description': 'Brown butter pumpkin spice cookie covered in cinnamon sugar.',
         'price': '$2.00',
         'image_url': 'static/images/angry_gunter.png', 
         'Availability':'In Stock!'
     },
     {
         'name': 'Apple Pie Cookie',
-        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+        'description': 'Soft vanilla spiced cookie with buttery pie crust pieces and freshly chopped juicy honeycrisps.',
         'price': '$2.00',
-        'image_url': 'static/images/angry_gunter.png', 
+        'image_url': 'NEEDS IMAGE', 
         'Availability':'In Stock!'
     },
+    {
+        'name': 'M&M’s® Cookie',
+        'description': 'Brown sugar chocolate chip cookie made with M&M’s® milk chocolate candies.',
+        'price': '$2.00',
+        'image_url': 'NEEDS IMAGE', 
+        'Availability':'In Stock!'
+    },
+    {
+        'name': 'Peanut Butter Cookie',
+        'description': 'The perfect peanut butter cookie. Soft, chewy interior. Crispy exterior.',
+        'price': '$2.00',
+        'image_url': 'NEEDS IMAGE', 
+        'Availability':'In Stock!'
+    }
     ]
 
 

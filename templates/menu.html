@@ -33,7 +33,10 @@
                             <div class="card-body text-center">
                                 <h5 class="card-title">{{ item.name }}</h5>
                                 <p class="card-text">{{ item.description }}</p>
-                                <p class="card-text"><strong>{{ item.price }}</strong></p>
+                                <p class="card-text d-flex justify-content-between">
+                                    <span>Starting at: </span>
+                                    <span><strong>{{ item.price }}</strong></span>
+                                </p>
                                 <p class="card-text"><strong>{{ item.Availability }}</strong></p>
                                 
                             </div>
