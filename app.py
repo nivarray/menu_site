@@ -66,7 +66,7 @@ menu_items = [
         'name': 'Apple Pie Cookie',
         'description': 'Soft vanilla spiced cookie with buttery pie crust pieces and freshly chopped juicy honeycrisps.',
         'price': '$2.00',
-        'image_url': 'NEEDS IMAGE', 
+        'image_url': 'static/images/Apple_Pie.png', 
         'Availability':'In Stock!'
     },
     {
