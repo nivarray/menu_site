@@ -59,7 +59,7 @@ menu_items = [
         'name': 'Pumpkin Snickerdoodle Cookie',
         'description': 'Brown butter pumpkin spice cookie covered in cinnamon sugar.',
         'price': '$2.00',
-        'image_url': 'static/images/angry_gunter.png', 
+        'image_url': 'static/images/Pumpkin_Snickerdoodle.png', 
         'Availability':'In Stock!'
     },
     {
@@ -73,7 +73,7 @@ menu_items = [
         'name': 'M&M’s® Cookie',
         'description': 'Brown sugar chocolate chip cookie made with M&M’s® milk chocolate candies.',
         'price': '$2.00',
-        'image_url': 'NEEDS IMAGE', 
+        'image_url': 'static/images/M&M\'s.png', 
         'Availability':'In Stock!'
     },
     {
