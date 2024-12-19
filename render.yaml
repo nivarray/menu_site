@@ -2,5 +2,6 @@ services:
   - type: web
     name: mias-sweet-tooth
     env: python
+    pythonVersion: 3.10
     buildCommand: ./build.sh #custom build script
     startCommand: gunicorn app:app #starts the app
