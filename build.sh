@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install -y \
+apt-get update
+apt-get install -y \
 	libgirepository1.0-dev \
 	gobject-introspection \
 	pkg-config \
