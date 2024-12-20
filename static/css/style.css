@@ -1,6 +1,6 @@
 /* External CSS for Mia's Sweet Tooth Shop */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: rgb(100, 50, 0); /*play around with the color*/
     background-color: rgb(217, 210, 233);
 }
@@ -15,8 +15,11 @@ h1, h2 {
     font-size: 3rem; /* Larger size for the title */
     font-weight: 700; /* Bold title */
     text-align: center; /* Center the title */
+    /* color: rgb(80, 40, 20); Adjust for better readability */
     color: rgb(100, 50, 0); /* Dark color for the title */
-    letter-spacing: 1px; /* Slight letter spacing for style */
+    margin-bottom: 1rem;
+    text-transform: capitalize; /* Capitalizes titles for consistency */
+    letter-spacing: 1.2px; /* Slight letter spacing for style */
 }
 
 /* Center text in all h1 and h2 elements
@@ -26,11 +29,14 @@ h1, h2 {
 } */
 
 .menu-list {
-    border: none; /* Change #333 to any color you prefer */
-    padding: 20px; /* Adds some space between the border and the content */
-    border-radius: 5px; /* Optional: adds rounded corners */
-    margin-top: 20px; /* Optional: adds space above the border */   
+    padding: 20px;
+    margin-top: 30px;
     background-color: transparent;
+    /* margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; */
 
 }
 
@@ -38,49 +44,77 @@ h1, h2 {
     width: 100%; /* Ensures images fill the width of the parent container */
     height: 300px; /* Fixed height for all images */
     object-fit: cover; /* Ensures the image covers the area without distortion */
-    border-radius: 30px; /* Rounds the corners of the image */
-    transition: transform 0.3s ease; /* Adds a smooth zoom-in effect */
+    border-radius: 20px 20px 20px 20px; /* Rounds the corners of the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth zoom-in effect */
 }
 
 .menu-list img:hover {
-    transform: scale(1.1); /* Scales the image by 10% */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05); /* Scales the image by 10% */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth*/
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
+/* Card Styling */
 .menu-list .card {
-    overflow: hidden;
-    background-color: rgb(217, 210, 233); /* Makes the container background transparent */
-    border: none; /* Optional: remove any borders around the card */
-    box-shadow: none;
-    border-radius: 30px;
-    padding: 10px;
+    background-color: rgb(217, 210, 233); /* Semi-transparent background for depth */ 
+    border: 1px solid rgba(100, 50, 0, 0.2); /* Light border for better structure */
+    border-radius: 20px 20px 0 0;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; /* Adjusts for responsiveness */
+    /* max-width: 300px;
+    height: 450px; /* Fixed height for uniformity */
+    /*border-radius: 20px;
+    transition: box-shadow 0.3s ease; */
 }
 
 .menu-list .card-body {
     /* padding: 15px;
     background-color: rgb(217, 210, 233);
-    border-radius: 0 0 30px 30px; Bottom corners rounded only */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures spacing between elements */
+    border-radius: 0 0 30px 30px; Bottom corners rounded only 
     height: 275px; /* Set a fixed height for uniformity */
+
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Top: Name, Middle: Description, Bottom: Price/Stock */
+    /* flex-direction: column; */
+    /* justify-content: space-between; Ensures spacing between elements */
+    min-height: 275px; /* Set a minimum height to ensure uniformity */
+    height: auto; /* Allow flexibility if needed */
     padding: 15px;
-    background-color: rgb(217, 210, 233);
-    border-radius: 0 0 30px 30px; /* Bottom corners rounded only */
+    background-color: rgba(255, 255, 255, 0.9); /* Softer background for readability */
+    border-radius: 0 0 20px 20px; /* Bottom corners rounded only */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
 }
 
 .card-text {
-    max-height: 120px; /* Limits the description height*/
-    overflow: hidden; /* Hides excess text */
-    text-overflow: ellipsis; /* Adds an ellipsis (...) for overflow */
-    white-space: normal; /* Allows wrapping of text */
-    line-height: 1.5; /* Adjust line spacing */
+    grid-row: 2; /* Description*/
+    /* max-height: 100px; Limits the description height */
+    /* overflow: hidden; Hides excess text */
+    /* text-overflow: ellipsis; Adds an ellipsis (...) for overflow */
+    /* white-space: normal; Allows wrapping of text */
+    line-height: 1.6; /* Adjust line spacing */
+    color: rgb(60, 30, 10); /* Darker text for better contrast */
+    font-size: 0.9rem; /* Uniform font size */
+    font-weight: normal;
+    margin-bottom: 15px; /* Provide space between description and price*/
     
 }
 
+.card-body .card-text {
+    white-space: normal; /* Allows wrapping of text */
+    overflow: visible; /* Show full text on hover */
+    max-height: none; /* Allow full expansion temporarily */
+}
+
 .card-text.d-flex {
+    grid-row: 3; /* Price and availability */
+    display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(80, 40, 20); /* Matches the title color for consistency */
     margin-top: auto; /* Pushes the price and availability to the bottom */
 }
