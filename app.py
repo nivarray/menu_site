@@ -8,10 +8,15 @@ app = Flask(__name__)
 menu_items = [
     {
         'name': 'Chocolate Chip Cookie',
-        'description': 'Big, soft brown sugar cookie made with semisweet chocolate chips and mini chocolate chips sprinkled with coarse sea salt.',
-        'price': '$2.50',
-        'image_url': 'static/images/Chocolate_Chip.png', 
-        'Availability':'In Stock!'
+        'details':{
+            'description': 'Big, soft brown sugar cookie made with semisweet chocolate chips and mini chocolate chips sprinkled with coarse sea salt.',
+            'image_url': 'static/images/Chocolate_Chip.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'Biscoff Cookie',
