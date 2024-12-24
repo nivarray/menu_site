@@ -98,4 +98,4 @@ def menu_page():
 
 # Indicates that script is being executed directly, good practice. meaning this will run when running "flask app" on terminal.
 if __name__ == '__main__': # Checks if script is being run directly
-    app.run(debug=True) # server starts in debug mode
+    app.run(host="0.0.0.0", port=5000, debug=True) # server starts in debug mode
