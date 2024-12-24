@@ -1,22 +1,27 @@
-FROM python:3.12.3
+# Stage 1: Build stage
+FROM python:3.12-slim AS build
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    libgirepository1.0-dev \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy the current project files to the container
+# Copy the project files to the build container
 COPY . .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port your application runs on (e.g., Flask uses 5000)
+# Stage 2: Final runtime stage
+FROM python:3.12-slim
+
+# Set the working directory in the final container
+WORKDIR /app
+
+# Copy only the necessary files from the build container
+COPY --from=build /app /app
+
+# Expose the port your application will run on
 EXPOSE 5000
 
-# Define the command to run your app
-CMD ["python", "app.py"]
+# Run the Flask app with Gunicorn for production
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+
