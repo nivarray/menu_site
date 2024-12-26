@@ -35,8 +35,14 @@
                                 <p class="card-text">{{ item.details.description }}</p>
                                 <p class="card-text"><strong>{{ item.details.Availability }}</strong></p>
                                 <p class="card-text d-flex justify-content-between">
-                                    <span> {{ item.pricing}} </span>
-                                    <span><strong>{{ item.pricing['1 Cookie'] }}</strong></span>
+                                    <ul>
+                                        {% for key, value in item.pricing.items() %}
+                                            <li>{{ key }}: ${{ value }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    
+                                    <!-- <span> {{ item.pricing}} </span>
+                                    <span><strong>{{ item.pricing['1 Cookie'] }}</strong></span> -->
                                 </p>
                             </div>
                         </div>
