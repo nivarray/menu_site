@@ -32,12 +32,6 @@ h1, h2 {
     padding: 20px;
     margin-top: 30px;
     background-color: transparent;
-    /* margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; */
-
 }
 
 .menu-list img {
@@ -61,26 +55,11 @@ h1, h2 {
     border-radius: 20px 20px 0 0;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%; /* Adjusts for responsiveness */
-    /* max-width: 300px;
-    height: 450px; /* Fixed height for uniformity */
-    /*border-radius: 20px;
-    transition: box-shadow 0.3s ease; */
 }
 
 .menu-list .card-body {
-    /* padding: 15px;
-    background-color: rgb(217, 210, 233);
-    border-radius: 0 0 30px 30px; Bottom corners rounded only 
-    height: 275px; /* Set a fixed height for uniformity */
-
     display: grid;
     grid-template-rows: auto 1fr auto; /* Top: Name, Middle: Description, Bottom: Price/Stock */
-    /* flex-direction: column; */
-    /* justify-content: space-between; Ensures spacing between elements */
     min-height: 275px; /* Set a minimum height to ensure uniformity */
     height: auto; /* Allow flexibility if needed */
     padding: 15px;
@@ -91,10 +70,6 @@ h1, h2 {
 
 .card-text {
     grid-row: 2; /* Description*/
-    /* max-height: 100px; Limits the description height */
-    /* overflow: hidden; Hides excess text */
-    /* text-overflow: ellipsis; Adds an ellipsis (...) for overflow */
-    /* white-space: normal; Allows wrapping of text */
     line-height: 1.6; /* Adjust line spacing */
     color: rgb(60, 30, 10); /* Darker text for better contrast */
     font-size: 0.9rem; /* Uniform font size */
@@ -110,11 +85,14 @@ h1, h2 {
 }
 
 .card-text.d-flex {
-    grid-row: 3; /* Price and availability */
-    display: flex;
-    justify-content: space-between;
+    display: block; /* Change to block to stack the price list below the description */
     font-weight: bold;
     font-size: 1rem;
     color: rgb(80, 40, 20); /* Matches the title color for consistency */
-    margin-top: auto; /* Pushes the price and availability to the bottom */
+    margin-top: 10px; /* Add space between description and price */
+}
+
+.price-list {
+    margin-top: 10px; /* Adds spacing between description and prices */
+    display: block; /* Ensures price list stays below descriptions */
 }
