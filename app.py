@@ -132,7 +132,7 @@ menu_items = [
         'name': 'Peanut Butter Cookie',
         'details': {
             'description': 'The perfect peanut butter cookie. Soft, chewy interior. Crispy exterior.',
-            'image_url': 'NEEDS IMAGE',
+            'image_url': 'static/images/Peanut_Butter.png',
             'Availability':'In Stock!'
         },
         'pricing': {'1 Cookie': 5.00,
