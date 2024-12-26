@@ -20,73 +20,125 @@ menu_items = [
     },
     {
         'name': 'Biscoff Cookie',
-        'description': 'Brown sugar cookie made with crushed Biscoff biscuits stuffed with Biscoff cookie butter.',
-        'price': '$2.00',
-        'image_url': 'static/images/Biscoff_Butter.PNG', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Brown sugar cookie made with crushed Biscoff biscuits stuffed with Biscoff cookie butter.',
+            'image_url': 'static/images/Biscoff_Butter.PNG', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},        
     },
     {
         'name': 'S’mores Cookie',
-        'description': 'Chocolate chip cookie stuffed with a graham cracker, Hershey’s chocolate, and a jumbo marshmallow. Topped with mini marshmallows, chopped milk chocolate bar pieces, and graham cracker crumbs.',
-        'price': '$2.00',
-        'image_url': 'static/images/Smores.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Chocolate chip cookie stuffed with a graham cracker, Hershey’s chocolate, and a jumbo marshmallow. Topped with mini marshmallows, chopped milk chocolate bar pieces, and graham cracker crumbs.',
+            'image_url': 'static/images/Smores.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'Fruity Pebbles Cookie',
-        'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
-        'price': '$2.00',
-        'image_url': 'static/images/Fruity_Pebbles.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
+            'image_url': 'static/images/Fruity_Pebbles.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'Cranberry Oatmeal Cookie',
-        'description': 'Moist oatmeal spice cookie mixed with dried cranberries and white chocolate chips. Optional macadamia nuts.',
-        'price': '$2.00',
-        'image_url': 'static/images/Oatmeal_Cranberry.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Moist oatmeal spice cookie mixed with dried cranberries and white chocolate chips. Optional macadamia nuts.',
+            'image_url': 'static/images/Oatmeal_Cranberry.png', 
+            'Availability':'In Stock!'            
+
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'White Chocolate Macadamia Cookie',
-        'description': 'Brown sugar cookie made with freshly chopped buttery rich macadamia nuts and white chocolate chips.',
-        'price': '$2.00',
-        'image_url': 'static/images/White_Chocolate_Macadamia.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Brown sugar cookie made with freshly chopped buttery rich macadamia nuts and white chocolate chips.',
+            'image_url': 'static/images/White_Chocolate_Macadamia.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'Red Velvet Cookie',
-        'description': 'Luscious moist red velvet cake cookie mixed with white chocolate chips.',
-        'price': '$2.00',
-        'image_url': 'static/images/Red_Velvet.PNG', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Luscious moist red velvet cake cookie mixed with white chocolate chips.',
+            'image_url': 'static/images/Red_Velvet.PNG', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'Pumpkin Snickerdoodle Cookie',
-        'description': 'Brown butter pumpkin spice cookie covered in cinnamon sugar.',
-        'price': '$2.00',
-        'image_url': 'static/images/Pumpkin_Snickerdoodle.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Brown butter pumpkin spice cookie covered in cinnamon sugar.',
+            'image_url': 'static/images/Pumpkin_Snickerdoodle.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
+
     },
     {
         'name': 'Apple Pie Cookie',
-        'description': 'Soft vanilla spiced cookie with buttery pie crust pieces and freshly chopped juicy honeycrisps.',
-        'price': '$2.00',
-        'image_url': 'static/images/Apple_Pie.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Soft vanilla spiced cookie with buttery pie crust pieces and freshly chopped juicy honeycrisps.',
+            'image_url': 'static/images/Apple_Pie.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'M&M’s® Cookie',
-        'description': 'Brown sugar chocolate chip cookie made with M&M’s® milk chocolate candies.',
-        'price': '$2.00',
-        'image_url': 'static/images/M&M\'s.png', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'Brown sugar chocolate chip cookie made with M&M’s® milk chocolate candies.',
+            'image_url': 'static/images/M&M\'s.png', 
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+                    '4 Cookies': 18.00,
+                    '6 Cookies': 25.00,
+                    '12 Cookies': 40.00},
     },
     {
         'name': 'Peanut Butter Cookie',
-        'description': 'The perfect peanut butter cookie. Soft, chewy interior. Crispy exterior.',
-        'price': '$2.00',
-        'image_url': 'NEEDS IMAGE', 
-        'Availability':'In Stock!'
+        'details': {
+            'description': 'The perfect peanut butter cookie. Soft, chewy interior. Crispy exterior.',
+            'image_url': 'NEEDS IMAGE',
+            'Availability':'In Stock!'
+        },
+        'pricing': {'1 Cookie': 5.00,
+            '4 Cookies': 18.00,
+            '6 Cookies': 25.00,
+            '12 Cookies': 40.00},
     }
     ]
 

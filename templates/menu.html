@@ -26,17 +26,17 @@
                     <div class="col-12 col-sm-6 col-md-4 mb-4">
                         <div class="card">
                             <div class="card-image">
-                                <img src="{{ item.image_url }}" alt="{{ item.name }}">
+                                <img src="{{ item.details.image_url }}" alt="{{ item.name }}">
                             </div>
                         </div>
                         <div class="card-description">
                             <div class="card-body text-center">
                                 <h5 class="card-title">{{ item.name }}</h5>
-                                <p class="card-text">{{ item.description }}</p>
-                                <p class="card-text"><strong>{{ item.Availability }}</strong></p>
+                                <p class="card-text">{{ item.details.description }}</p>
+                                <p class="card-text"><strong>{{ item.details.Availability }}</strong></p>
                                 <p class="card-text d-flex justify-content-between">
-                                    <span>1 Cookie: </span>
-                                    <span><strong>{{ item.price }}</strong></span>
+                                    <span> {{ item.pricing}} </span>
+                                    <span><strong>{{ item.pricing['1 Cookie'] }}</strong></span>
                                 </p>
                             </div>
                         </div>
