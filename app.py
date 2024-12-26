@@ -136,9 +136,9 @@ menu_items = [
             'Availability':'In Stock!'
         },
         'pricing': {'1 Cookie': 5.00,
-            '4 Cookies': 18.00,
-            '6 Cookies': 25.00,
-            '12 Cookies': 40.00},
+                '4 Cookies': 18.00,
+                '6 Cookies': 25.00,
+                '12 Cookies': 40.00},
     }
     ]
 
