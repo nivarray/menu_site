@@ -2,6 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+# price_dict = {'1 Cookie': f"{5:.2f}",
+#               '4 Cookies': f"{18:.2f}",
+#               '6 Cookies': f"{25:.2f}",
+#               '12 Cookies': f"{40:.2f}"}
 
 # Menu data
 """Update for all cookies, and add images. Make description sound more enticing"""
@@ -13,10 +17,10 @@ menu_items = [
             'image_url': 'static/images/Chocolate_Chip.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'Biscoff Cookie',
@@ -25,10 +29,10 @@ menu_items = [
             'image_url': 'static/images/Biscoff_Butter.PNG', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},        
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},       
     },
     {
         'name': 'S’mores Cookie',
@@ -37,10 +41,10 @@ menu_items = [
             'image_url': 'static/images/Smores.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'Fruity Pebbles Cookie',
@@ -49,10 +53,10 @@ menu_items = [
             'image_url': 'static/images/Fruity_Pebbles.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'Cranberry Oatmeal Cookie',
@@ -62,10 +66,10 @@ menu_items = [
             'Availability':'In Stock!'            
 
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'White Chocolate Macadamia Cookie',
@@ -74,10 +78,10 @@ menu_items = [
             'image_url': 'static/images/White_Chocolate_Macadamia.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'Red Velvet Cookie',
@@ -86,10 +90,10 @@ menu_items = [
             'image_url': 'static/images/Red_Velvet.PNG', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'Pumpkin Snickerdoodle Cookie',
@@ -98,10 +102,10 @@ menu_items = [
             'image_url': 'static/images/Pumpkin_Snickerdoodle.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
 
     },
     {
@@ -111,10 +115,10 @@ menu_items = [
             'image_url': 'static/images/Apple_Pie.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'M&M’s® Cookie',
@@ -123,10 +127,10 @@ menu_items = [
             'image_url': 'static/images/M&M\'s.png', 
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                    '4 Cookies': 18.00,
-                    '6 Cookies': 25.00,
-                    '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     },
     {
         'name': 'Peanut Butter Cookie',
@@ -135,10 +139,10 @@ menu_items = [
             'image_url': 'static/images/Peanut_Butter.png',
             'Availability':'In Stock!'
         },
-        'pricing': {'1 Cookie': 5.00,
-                '4 Cookies': 18.00,
-                '6 Cookies': 25.00,
-                '12 Cookies': 40.00},
+        'pricing': {'1 Cookie': f"{5:.2f}",
+              '4 Cookies': f"{18:.2f}",
+              '6 Cookies': f"{25:.2f}",
+              '12 Cookies': f"{40:.2f}"},
     }
     ]
 
