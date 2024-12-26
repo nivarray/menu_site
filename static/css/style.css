@@ -57,12 +57,19 @@ h1, h2 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.card-title {
+    margin-bottom: 10px;
+}
+
 .menu-list .card-body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display: grid;
     grid-template-rows: auto 1fr auto; /* Top: Name, Middle: Description, Bottom: Price/Stock */
-    min-height: 275px; /* Set a minimum height to ensure uniformity */
-    height: auto; /* Allow flexibility if needed */
-    padding: 15px;
+    /* min-height: 300px; Set a minimum height to ensure uniformity */
+    height: 325px; /* Allow flexibility if needed */
+    padding: 15px; 
     background-color: rgba(255, 255, 255, 0.9); /* Softer background for readability */
     border-radius: 0 0 20px 20px; /* Bottom corners rounded only */
     box-sizing: border-box; /* Ensure padding is included in the height calculation */
@@ -75,7 +82,7 @@ h1, h2 {
     font-size: 0.9rem; /* Uniform font size */
     font-weight: normal;
     margin-bottom: 15px; /* Provide space between description and price*/
-    
+    flex-grow: 1; /* Allows the desc to take up available space */
 }
 
 .card-body .card-text {
@@ -95,4 +102,5 @@ h1, h2 {
 .price-list {
     margin-top: 10px; /* Adds spacing between description and prices */
     display: block; /* Ensures price list stays below descriptions */
+    align-self: flex-start;
 }
