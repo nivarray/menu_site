@@ -32,17 +32,11 @@ h1, h2 {
     padding: 20px;
     margin-top: 30px;
     background-color: transparent;
-    /* new below */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
 }
 
 .menu-list img {
     width: 100%; /* Ensures images fill the width of the parent container */
-    height: auto; /* Used to be 300 */
-    /* height: 300px; Fixed height for all images */
+    height: 300px; /* Fixed height for all images */
     object-fit: cover; /* Ensures the image covers the area without distortion */
     border-radius: 20px 20px 20px 20px; /* Rounds the corners of the image */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth zoom-in effect */
@@ -61,21 +55,6 @@ h1, h2 {
     border-radius: 20px 20px 0 0;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* new below */
-    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with space */
-    box-sizing: border-box; 
-}
-
-@media (max-width: 768px) {
-    .menu-list .card {
-        flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .menu-list .card {
-        flex: 1 1 100%; /* 1 card per row on small screens */
-    }
 }
 
 .card-title {
@@ -89,7 +68,7 @@ h1, h2 {
     /* display: grid;
     grid-template-rows: auto 1fr auto; /* Top: Name, Middle: Description, Bottom: Price/Stock */
     /* min-height: 300px; Set a minimum height to ensure uniformity */
-    height: 100%; /* 325px; /* Allow flexibility if needed */
+    height: 325px; /* Allow flexibility if needed */
     padding: 15px; 
     background-color: rgba(255, 255, 255, 0.9); /* Softer background for readability */
     border-radius: 0 0 20px 20px; /* Bottom corners rounded only */
