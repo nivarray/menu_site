@@ -47,6 +47,30 @@ h1, h2 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth*/
     /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:16 px; /* Space between cards */
+}
+
+.card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
 
 /* Card Styling */
 .menu-list .card {
