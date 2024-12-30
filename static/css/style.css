@@ -64,6 +64,12 @@ h1, h2 {
     /* new below */
     flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with space */
     box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+.menu-list .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
