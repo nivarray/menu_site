@@ -147,10 +147,15 @@ menu_items = [
     ]
 
 
-# main page is menu page
+# Main page is menu page for now
 @app.route('/')
 def menu_page():
     return render_template('menu.html', menu_items=menu_items)
+
+# Redirects user to cookies page
+@app.route('/cookies')
+def cookies_page():
+    return render_template('menu.html') 
 
 # Indicates that script is being executed directly, good practice. meaning this will run when running "flask app" on terminal.
 if __name__ == '__main__': # Checks if script is being run directly
