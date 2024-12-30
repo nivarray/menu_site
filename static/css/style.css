@@ -170,6 +170,7 @@ h1, h2 {
         top: 60px;
         left: 0;
         width: 100%;
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on mobile screens */
     }
     .menu.show {
         display: flex; /* Show menu when toggled */
