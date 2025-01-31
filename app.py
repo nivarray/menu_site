@@ -11,7 +11,7 @@ app = Flask(__name__)
 """Update for all cookies, and add images. Make description sound more enticing"""
 menu_items = [
     {
-        'name': 'Chocolate Chip Cookie',
+        'name': 'Chocolate Chip',
         'details':{
             'description': 'Big, soft brown sugar cookie made with semisweet chocolate chips and mini chocolate chips sprinkled with coarse sea salt.',
             'image_url': 'static/images/Chocolate_Chip.png', 
@@ -23,7 +23,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'Biscoff Cookie',
+        'name': 'Biscoff',
         'details': {
             'description': 'Brown sugar cookie made with crushed Biscoff biscuits stuffed with Biscoff cookie butter.',
             'image_url': 'static/images/Biscoff_Butter.PNG', 
@@ -35,7 +35,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},       
     },
     {
-        'name': 'S’mores Cookie',
+        'name': 'S’mores',
         'details': {
             'description': 'Chocolate chip cookie stuffed with a graham cracker, Hershey’s chocolate, and a jumbo marshmallow. Topped with mini marshmallows, chopped milk chocolate bar pieces, and graham cracker crumbs.',
             'image_url': 'static/images/Smores.png', 
@@ -47,7 +47,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'Fruity Pebbles Cookie',
+        'name': 'Fruity Pebbles',
         'details': {
             'description': 'A buttery, soft cookie loaded with roasted pecans and a hint of vanilla, offering a delightful crunch in every bite.',
             'image_url': 'static/images/Fruity_Pebbles.png', 
@@ -59,7 +59,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'Cranberry Oatmeal Cookie',
+        'name': 'Cranberry Oatmeal',
         'details': {
             'description': 'Moist oatmeal spice cookie mixed with dried cranberries and white chocolate chips. Optional macadamia nuts.',
             'image_url': 'static/images/Oatmeal_Cranberry.png', 
@@ -72,7 +72,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'White Chocolate Macadamia Cookie',
+        'name': 'White Chocolate Macadamia',
         'details': {
             'description': 'Brown sugar cookie made with freshly chopped buttery rich macadamia nuts and white chocolate chips.',
             'image_url': 'static/images/White_Chocolate_Macadamia.png', 
@@ -84,7 +84,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'Red Velvet Cookie',
+        'name': 'Red Velvet',
         'details': {
             'description': 'Luscious moist red velvet cake cookie mixed with white chocolate chips.',
             'image_url': 'static/images/Red_Velvet.PNG', 
@@ -96,7 +96,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'Pumpkin Snickerdoodle Cookie',
+        'name': 'Pumpkin Snickerdoodle',
         'details': {
             'description': 'Brown butter pumpkin spice cookie covered in cinnamon sugar.',
             'image_url': 'static/images/Pumpkin_Snickerdoodle.png', 
@@ -109,7 +109,7 @@ menu_items = [
 
     },
     {
-        'name': 'Apple Pie Cookie',
+        'name': 'Apple Pie',
         'details': {
             'description': 'Soft vanilla spiced cookie with buttery pie crust pieces and freshly chopped juicy honeycrisps.',
             'image_url': 'static/images/Apple_Pie.png', 
@@ -121,7 +121,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'M&M’s® Cookie',
+        'name': 'M&M’s®',
         'details': {
             'description': 'Brown sugar chocolate chip cookie made with M&M’s® milk chocolate candies.',
             'image_url': 'static/images/M&M\'s.png', 
@@ -133,7 +133,7 @@ menu_items = [
               '12 Cookies': f"{40:.2f}"},
     },
     {
-        'name': 'Peanut Butter Cookie',
+        'name': 'Peanut Butter',
         'details': {
             'description': 'The perfect peanut butter cookie. Soft, chewy interior. Crispy exterior.',
             'image_url': 'static/images/Peanut_Butter.png',
